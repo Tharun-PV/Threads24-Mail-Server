@@ -7,6 +7,9 @@ const { promisify } = require('util');
 const cron = require('node-cron');
 const app = express();
 const port = 3001;
+const cors = require('cors');
+app.use(cors());
+
 
 
 app.use((req, res, next) => {
