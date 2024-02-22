@@ -145,7 +145,7 @@ const sendEmail = async () => {
   const mailOptions = {
     from: gmailCredentials.email,
     to: 'threads.cse@sonatech.ac.in', 
-    subject: 'CSV Export',
+    subject: 'DB Backup',
     text: 'Vanakam Da Mapla, This is the attachment of database for every 5 Mins.',
     attachments: [
       {
