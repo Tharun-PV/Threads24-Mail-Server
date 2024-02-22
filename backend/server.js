@@ -62,6 +62,10 @@ async function exportCollectionsToCSV() {
   }
 }
 
+app.get('/', (req, res) => {
+  res.send('Hello, this is your API server!');
+});
+
 
 app.get('/download-excel', async (req, res) => {
   try {
