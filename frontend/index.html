@@ -40,11 +40,11 @@
 
 <script>
   document.getElementById('downloadButton').addEventListener('click', function() {
-      const downloadUrl = 'http://localhost:3000/download-excel';
+      const downloadUrl = 'https://threads24-mail-server.onrender.com/download-excel';
       window.open(downloadUrl, '_blank');
     });
   document.getElementById('viewExcelButton').addEventListener('click', function() {
-    fetch('http://localhost:3000/collections')
+    fetch('https://threads24-mail-server.onrender.com/collections')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -71,7 +71,7 @@
         viewButton.textContent = 'View Collection';
         viewButton.addEventListener('click', function() {
           const selectedCollection = dropdown.value;
-          fetch(`http://localhost:3000/collection-data?name=${selectedCollection}`)
+          fetch(`https://threads24-mail-server.onrender.com/collection-data?name=${selectedCollection}`)
             .then(response => {
               if (!response.ok) {
                 throw new Error('Network response was not ok');
