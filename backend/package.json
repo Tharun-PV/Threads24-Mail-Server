@@ -21,7 +21,7 @@
       "mongodb": "^3.6.3",
       "exceljs": "^4.0.1",
       "fs": "0.0.1-security",
-      "nodemailer": "6.14.10",
+      "nodemailer": "6.14.11",
       "util": "^0.12.3",
       "node-cron": "^3.0.0"
     }
