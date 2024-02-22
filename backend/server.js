@@ -137,7 +137,7 @@ app.get('/collection-data', async (req, res) => {
 
 const gmailCredentials = {
   email: 'Sona.cse.sympo@gmail.com',
-  password: 'sabzvrimgumxfihr',
+  password: 'ycpekfyqeiikrscn',
 };
 
 
