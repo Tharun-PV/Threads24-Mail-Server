@@ -19,7 +19,7 @@ app.use((req, res, next) => {
   next();
 });
 
-const mongoUri = "mongodb+srv://sona123:sona123@threadsapp.scz5gdt.mongodb.net/?retryWrites=true&w=majority";
+const mongoUri = "mongodb://sona123:sona123@ac-joussjk-shard-00-00.scz5gdt.mongodb.net:27017,ac-joussjk-shard-00-01.scz5gdt.mongodb.net:27017,ac-joussjk-shard-00-02.scz5gdt.mongodb.net:27017/?authSource=admin&replicaSet=atlas-yss066-shard-0&retryWrites=true&w=majority&tls=true";
 const databaseName = "test";
 
 async function exportCollectionsToCSV() {
