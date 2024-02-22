@@ -10,8 +10,12 @@ const app = express();
 const port = 4000;
 
 app.use(cors())
+app.use(bodyParser.json());
 
-
+app.use((req, res, next) => {
+  console.log('Incoming Request:', req.method, req.url, req.headers['content-type']);
+  next();
+});
 
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
