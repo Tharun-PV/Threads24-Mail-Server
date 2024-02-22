@@ -13,16 +13,11 @@ app.use(cors())
 
 
 
-// app.use((req, res, next) => {
-//   res.header('Access-Control-Allow-Origin', '*');
-//   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
-//   next();
-// });
-
-app.use(cors({
-  origin: 'https:download.sonacse.in',
-}));
-
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+  next();
+});
 
 const mongoUri = "mongodb+srv://sona123:sona123@threadsapp.scz5gdt.mongodb.net/?retryWrites=true&w=majority";
 const databaseName = "test";
